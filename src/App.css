@@ -1,38 +1,155 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  height: 80px;
+  background: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /*align-items: center;*/
+  justify-content: space-between;
+  padding: 0px 50px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  
+}
+nav .logo{
+  font-size: 33px;
+  color: #092b46;
+  font-weight: 600;
+  margin: 14px;
+}
+nav .dot{
+  color: #fdbe83;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin: 25px 10px;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li .login{
+  background: #fb8500
+}
+nav ul li .trial{
+  background: #023047
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  height: 100px;
+  width: 100px;
+  padding: 10px 20px;
+  border-radius: 3px;
+ }
+ 
+ img{
+   position: absolute;
+   top:83px;
+   right: 0px;
+   width: 60%;
+   height: auto;
+
+ }
+
+ #formlogin{
+   width: 40%;
+   background:#fff;
+   height: 400px; 
+   position: relative;
+   top: 20px;
+
+ }
+ .wrapper{
+   text-align: center;
+   margin:0px 1px;
+   padding: 10px;
+   background: #fff;
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   width: 70%;
+
+ }
+ h2{
+   margin-bottom: 0px;
+ }
+
+.formInput{
+  width: 100%;
+  padding: 8px;
+  margin: 3px 0px;
+}
+.submit{
+  width: 100%;
+  padding: 8px;
+  margin: 3px 0px;
+  background: #023047;
+  color: #fff;
+}
+/*#form-check-input #form-check-label{
+  
+  float: left;
+}*/
+#checkbox{
+  float: left;
+  margin: 1px;
+  padding: 1px;
+  
+}
+
+#forgot-password{
+ float:right;
+ text-decoration: none;
+ color: black;
+}
+
+@media only screen and (max-width:700px){
+  #formlogin{
+    display: block;
+    width: 100%;
+    position: relative;
+    left: 10px;
+    }
+  
+
+  img{
+    display: none;
+ }
+
+ #menuList{
+   display: none;
+ }
+  
+  /*
+  nav{
+    z-index: 1;
+    grid-area: nav;
   }
-  to {
-    transform: rotate(360deg);
+  .formlogin{
+    grid-area: form;
   }
+  .img{
+    grid-area: img;
+  }
+  .app{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "form"
+    "img";
+    background: #023047;
+  }*/
+
+
 }
